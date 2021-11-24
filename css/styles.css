@@ -518,6 +518,7 @@ img {
   color: var(--shadow-text-color);
 }
 .subscribe-input {
+  margin-right: 12px;
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -529,8 +530,7 @@ img {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.submit-btn {
-  margin-left: 12px;
+.tertiary-btn {
   display: inline-flex;
   min-width: 200px;
   height: 50px;
@@ -585,8 +585,8 @@ img {
   top: 50%;
   left: 50%;
 
-  min-width: 528px;
-  min-height: 580px;
+  width: 528px;
+  height: 580px;
   background-color: var(--primary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -633,12 +633,13 @@ img {
 .form-field {
   display: flex;
   flex-direction: column;
-}
-.form-field:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .form-input {
   margin: 0;
+  width: 448px;
+  height: 40px;
   padding: 11px 12px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -651,6 +652,10 @@ img {
   text-align: left;
   vertical-align: top;
   letter-spacing: 1%;
+}
+.comment-field {
+  display: flex;
+  flex-direction: column;
 }
 .textaria::placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -687,8 +692,8 @@ img {
   color: var(--accent-color);
   text-decoration: underline;
 }
-.submit-btn.modal {
-  margin: 0 auto;
+.submit-btn {
+  margin-left: 124px;
 }
 /* Портфолио */
 .portfolio-section {
