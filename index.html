@@ -443,7 +443,7 @@
         </div>
 
         <div class="join-us">
-          <p class="join-us-text">присоединяйтесь</p>
+          <p class="action-text">присоединяйтесь</p>
           <ul class="join-us-list">
             <li class="join-us-item">
               <a href="" class="join-us-link"
@@ -473,6 +473,18 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <form action="Subscribe">
+            <p class="action-text">Подпишитесь на рассылку</p>
+            <label for="mail" class="subscribe-label">E-mail</label>
+            <input type="mail" name="mail" id="mail" class="subscribe-input" />
+            <button class="submit-btn" type="submit">
+              Подписаться<svg class="send-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!--Модальное окно-->
@@ -483,6 +495,44 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <!--Форма-->
+        <form class="form" action="">
+          <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form-field">
+            <label class="form-label" for="name">Имя</label>
+            <input class="form-input" type="text" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="tel">Телефон</label>
+            <input class="form-input" type="tel" name="tel" id="tel" />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="mail">Почта</label>
+            <input class="form-input" type="mail" name="mail" id="mail" />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="comment">Комментарий</label>
+            <textarea
+              class="textaria"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              name="policy"
+              id="policy"
+            />
+            <label for="policy" class="policy-text"
+              >Соглашаюсь с рассылкой и принимаю
+              <span><a href="">Условия договора</a></span></label
+            >
+          </div>
+          <button class="submit-btn modal" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
